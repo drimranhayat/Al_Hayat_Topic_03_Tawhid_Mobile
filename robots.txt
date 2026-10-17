@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://al-hayat-tawhid-worship.aquaearth3.chatgpt.site/sitemap.xml

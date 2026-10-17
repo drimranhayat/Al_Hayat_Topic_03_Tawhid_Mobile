@@ -43,7 +43,7 @@ After GitHub provides the final URL, configure the search metadata:
 python3 configure_seo.py --base-url https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/ --directory .
 ```
 
-Upload the updated HTML, robots file and sitemap. The portable ZIP has no canonical URL pointing to a private preview. Search ranking is not guaranteed.
+Upload the updated HTML, robots file and sitemap. The release includes canonical URLs for the public Al-Hayat site. Search ranking is not guaranteed.
 
 ## Sources and limits
 
@@ -77,3 +77,14 @@ Arabic uses Amiri; Urdu prefers locally installed Jameel Noori Nastaleeq with No
 ## Mobile reading update
 
 Dedicated layouts for phones and tablets, including 320–430px screens: wrapping section buttons, stacked search and selectors, single-column study menus, larger text, 44px or larger action controls, wrapped pagination, safe-area spacing, and scrollable dialogs. The phone dock remains clear of the final content and notification messages. Arabic and Urdu keep normal word boundaries. Existing topics, source text, IDs and browser progress keys are preserved. Automated behavior/content checks pass; browser viewport and device visual testing was unavailable in this environment.
+
+
+## Final reading layout
+The homepage offers five trilingual section cards. The library shows eight compact cards per page; each opens one focused lesson with previous/next links and optional learning panels. All 45 Arabic editorial card headings have vowel marks. Urdu uses black text, with light surfaces in dark mode.
+
+The original 40 hadith, 46 explanatory answers and 40 MCQs are preserved, including source wording notes and publisher grading qualifications. This focused question bank does not claim exhaustive coverage of all scholarly discussions. Browser progress IDs, question IDs and quiz storage keys are unchanged.
+
+Public site: https://al-hayat-tawhid-worship.aquaearth3.chatgpt.site/
+The release includes canonical URLs, unique descriptions, social metadata, structured data, robots.txt and a 44-page sitemap. Submit the deployed sitemap through your own Search Console account. Search indexing and rankings are not guaranteed.
+
+Upload the ZIP contents directly to the GitHub repository root. Enable Pages from main / root. No build step, database or API key is required. Run `python3 build.py` to regenerate; reconfigure canonical URLs when moving to another host.
